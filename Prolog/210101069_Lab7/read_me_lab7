@@ -1,0 +1,19 @@
+I have created 4 predicates.
+Instructions:
+1.The dutch_flag_sort takes 2 arguments ,it is assumed that First argument is a List.
+2.It is already given that the list contains atoms,as they are surrounded by single quotes.
+3.So, the output only has atoms (not surrounded by single quotes, in prolog 'atom'=atom).
+4.The list should only have 'red' or 'white' or 'blue' as its elements and any other elements are not allowed.
+ Any other input will give false and a message would be printed.
+5.There are other helper predicates added to count number of instances and appending to the list when needed.
+6.It is a linear algorithm as only O(n) (n is length of list) is used.
+7.After the output is printed, you must only press enter, to abort the current query( This might not be required sometimes).
+
+To run :-
+1.consult('210101069_Lab7.pl').
+2.dutch_flag_sort(['white', 'red', 'blue', 'red', 'white', 'blue'], Sorted).
+3.dutch_flag_sort(['red', 'blue', 'red', 'white', 'blue'], Sorted).
+4.dutch_flag_sort(['red', 'blue', 'red', 'white', 'green'], Sorted).
+5.dutch_flag_sort(['red', 'blue', 'red', 'white','red','red'], Sorted).
+6.dutch_flag_sort([], Sorted).
+7.dutch_flag_sort(['blue','blue','red'],Sorted).
